@@ -410,7 +410,7 @@
 
                 $('#cmsgSubmit').html('')
 
-                if (values.cname.length == 0 || values.cphone.length == 0 || values.cemail.length == 0 || values.ctip.length == 0) {
+                if (values.cname.length == 0 || values.cphone.length == 0 || values.ctip.length == 0) {
                     return $('#cmsgSubmit').html('Please fill all required fields!')
                 } else if (values.ctip < 5000) {
                     return $('#cmsgSubmit').html('Tip Nonimal should be more than / equal to 5000 (five thousands)')
