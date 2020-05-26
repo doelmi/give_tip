@@ -145,8 +145,8 @@ class HomeController extends Controller
             curl_setopt($curlHandle, CURLOPT_SSL_VERIFYPEER, true);
             curl_setopt($curlHandle, CURLOPT_SSL_VERIFYHOST, 2);
             curl_setopt($curlHandle, CURLOPT_VERBOSE, true);
-            curl_setopt($curlHandle, CURLOPT_CAINFO, app()->storagePath('app\cacert.pem'));
-            curl_setopt($curlHandle, CURLOPT_CAPATH, app()->storagePath('app\cacert.pem'));
+            curl_setopt($curlHandle, CURLOPT_CAINFO, app()->storagePath('app/cacert.pem'));
+            curl_setopt($curlHandle, CURLOPT_CAPATH, app()->storagePath('app/cacert.pem'));
         }
 
         curl_setopt($curlHandle, CURLOPT_CUSTOMREQUEST, $method);
